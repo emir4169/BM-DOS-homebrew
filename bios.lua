@@ -1,6 +1,8 @@
 --BLOCK MESA BIOS
 --Used for all Block Mesa bootable computers
 --inject code stolen from https://pastebin.com/yzfDMjwf
+print("prebios")
+sleep(10)
 local oldPull = os.pullEvent
 _G.os.pullEvent = os.pullEventRaw
 _G.os.pullEventOld = oldPull
